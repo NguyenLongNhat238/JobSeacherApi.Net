@@ -19,15 +19,15 @@ namespace Job.Web.Controllers
         {
             categorySvc = new CategorySvc();
         }
-        [HttpPost("get-by-id")]
-        public IActionResult GetCategoryByID([FromBody] SimpleReq simpleReq)
+        [HttpGet("get-by-id")]
+        public IActionResult GetCategoryByID([FromQuery] SimpleReq simpleReq)
         {
             var res = new SingleRsp();
             res = categorySvc.Read(simpleReq.Id);
             return Ok(res);
         }
 
-        [HttpPost("get-all")]
+        [HttpGet("get-all")]
         public IActionResult getAllCategories()
         {
             var res = new SingleRsp();
