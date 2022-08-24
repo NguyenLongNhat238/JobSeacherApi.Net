@@ -1,0 +1,12 @@
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.deps.json
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.dll
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.pdb
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.AssemblyInfoInputs.cache
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.AssemblyInfo.cs
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.dll
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.pdb
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.runtimeconfig.json
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.runtimeconfig.dev.json
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.csproj.AssemblyReference.cache
+C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.genruntimeconfig.cache
