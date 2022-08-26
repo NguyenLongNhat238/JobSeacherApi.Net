@@ -19,16 +19,24 @@ namespace Job.Web.Controllers
         {
             categorySvc = new CategorySvc();
         }
-        [HttpGet("get-by-id")]
-        public IActionResult GetCategoryByID([FromQuery] SimpleReq simpleReq)
+        [HttpGet("{id:int}")]
+        public IActionResult GetCategoryByID(int id)
         {
             var res = new SingleRsp();
-            res = categorySvc.Read(simpleReq.Id);
+            res = categorySvc.Read(id);
+            return Ok(res);
+        }
+
+        [HttpGet("get-by-name")]
+        public IActionResult GetJobsCategoryByName([FromQuery] SimpleReq simpleReq)
+        {
+            var res = new SingleRsp();
+            res.Data = categorySvc.Read(simpleReq.Keyword);
             return Ok(res);
         }
 
         [HttpGet("get-all")]
-        public IActionResult getAllCategories()
+        public IActionResult GetAllCategories()
         {
             var res = new SingleRsp();
             res.Data = categorySvc.All;

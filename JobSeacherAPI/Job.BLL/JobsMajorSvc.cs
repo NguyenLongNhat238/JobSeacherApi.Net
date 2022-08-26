@@ -8,13 +8,14 @@ using System.Text;
 
 namespace Job.BLL
 {
-    public class CategorySvc : GenericSvc<CategoryRep, JobsCategory>
+    public class JobsMajorSvc: GenericSvc<JobsMajorRep, JobsMajor>
     {
-        private CategoryRep categoryRep;
-        public CategorySvc()
+        private JobsMajorRep jobsMajorRep;
+        public JobsMajorSvc()
         {
-            categoryRep = new CategoryRep();
+            jobsMajorRep = new JobsMajorRep();
         }
+
         #region
         public override SingleRsp Read(int id)
         {
@@ -22,6 +23,7 @@ namespace Job.BLL
             res.Data = _rep.Read(id);
             return res;
         }
+        #endregion
 
         public SingleRsp Read(string keyword)
         {
@@ -29,6 +31,5 @@ namespace Job.BLL
             res.Data = _rep.Read(keyword);
             return res;
         }
-        #endregion
     }
 }
