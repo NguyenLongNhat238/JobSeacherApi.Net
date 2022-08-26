@@ -22,6 +22,21 @@ namespace Job.Common.DAL
         }
 
         /// <summary>
+        /// Insert item
+        /// </summary>
+        /// <param name="entity">Entity</param>
+        public void Insert(T entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException("Entity");
+            }
+            _context.Add(entity);
+        }
+
+
+
+        /// <summary>
         /// Create list model
         /// </summary>
         /// <param name="l">List model</param>
