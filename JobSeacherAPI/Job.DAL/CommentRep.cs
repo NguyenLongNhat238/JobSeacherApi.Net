@@ -13,18 +13,45 @@ namespace Job.DAL
         {
 
         }
-        public override JobsComment Read(int id)
+        public List<JobsComment> GetAll()
+        {
+
+            var all = Context.JobsComments.Select(x=>x).ToList();
+            return all;
+
+        }
+        public List<JobsComment> ReadById(int id)
         {
             //id hirer
-            var res = All.FirstOrDefault(c => c.HirerId == id);
-            return res;
+            try
+            {
+                var list = Context.JobsComments.Where(c => c.HirerId == id).ToList();
+                System.Diagnostics.Debug.WriteLine(list);
+                return list;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+    
+         
             //return base.Read(id);
+        }
+        public  JobsComment Delete(int id)
+        {
+            //id comment item
+         
+            var res = Context.JobsComments.Where(c => c.Id == id).First();
+            Context.Remove(res);
+            Context.SaveChanges();
+            return res;
         }
         public JobsComment Create(JobsComment c)
         {
             try
             {
-                //id hirer
+            
                 Context.Add(c);
                 Context.SaveChanges();
                 return c;

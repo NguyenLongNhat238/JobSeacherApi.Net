@@ -56,6 +56,7 @@ namespace Job.Common.DAL
             return _context.Set<T>().Where(p);
         }
 
+
         /// <summary>
         /// Read single object
         /// </summary>

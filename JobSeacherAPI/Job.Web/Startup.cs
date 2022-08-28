@@ -86,15 +86,24 @@ namespace Job.Web
             });
             #endregion
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
+              
                 endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                      pattern: "{controller=CommentController}/{action=HomePage}");
+                    
             });
         }
     }

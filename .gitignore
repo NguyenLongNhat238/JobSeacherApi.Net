@@ -35,3 +35,6 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+JobSeacherAPI/.vs/JobSeacherAPI/config/applicationhost.config
+JobSeacherAPI/Job.BLL/obj/Debug/netcoreapp3.1/Job.BLL.csproj.CoreCompileInputs.cache
+JobSeacherAPI/Job.BLL/obj/Debug/netcoreapp3.1/Job.BLL.genruntimeconfig.cache
