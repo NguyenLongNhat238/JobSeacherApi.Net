@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,11 +20,23 @@ namespace Job.Web.Controllers
         {
             jobsApplySvc = new JobsApplySvc();
         }
+
         [HttpGet("{id:int}")]
         public IActionResult GetApplyByID(int id)
         {
             var res = new SingleRsp();
             res = jobsApplySvc.Read(id);
+            if (res.Data == null)
+            {
+                return NotFound();
+            }
+            return Ok(res);
+        }
+        [HttpGet("get-all")]
+        public IActionResult GetAllApply()
+        {
+            var res = new SingleRsp();
+            res.Data = jobsApplySvc.All;
             return Ok(res);
         }
 
@@ -34,17 +47,45 @@ namespace Job.Web.Controllers
             res = jobsApplySvc.Remove(simpleReq.Id);
             if (res.Data == null)
             {
-                return BadRequest();
+                return NotFound(res);
             }
             return NoContent();
         }
-
-        [HttpGet("get-all")]
-        public IActionResult GetAllApply()
+        [HttpPost("create-apply")]
+        public IActionResult CreateApply([FromBody] CreateApplyReq createApplyReq)
         {
             var res = new SingleRsp();
-            res.Data = jobsApplySvc.All;
+            res = jobsApplySvc.CheckApply(createApplyReq);
+            if (res.Data == null)
+            {
+                res.SetMessage("Bạn Đã Ứng Tuyển Trước Đó Rồi!!!");
+                return BadRequest(res);
+            }
+            res = jobsApplySvc.CreateApply(createApplyReq);
+            if (res.Data == null)
+                return BadRequest();
+            return CreatedAtAction("Get Apply ID",res.Data);
+        }
+
+        [HttpPatch("{id:int}/update-apply")]
+        public IActionResult UpdateApply(int id ,[FromBody] CreateApplyReq createApplyReq)
+        {
+            var res = new SingleRsp();
+            if(jobsApplySvc.Read(id).Data == null)
+            {
+                res.SetMessage("Không có bài ứng tuyển!!!");
+                res.SetError("Không tìm thấy dữ liệu bài ứng tuyển!!!");
+                return BadRequest(res);
+            }
+            res = jobsApplySvc.UpdateApply(id, createApplyReq);
+            if (res.Data == null)
+            {
+                res.SetMessage("Lỗi hệ thống!!!");
+                res.SetError("Lỗi từ hệ thống!!");
+                return BadRequest(res);
+            }
             return Ok(res);
         }
+   
     }
 }

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Job.Common.Rsp;
 using Job.DAL;
 using Job.DAL.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Job.BLL
 {

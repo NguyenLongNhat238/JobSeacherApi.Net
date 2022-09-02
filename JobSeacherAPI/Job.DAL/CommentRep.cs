@@ -25,7 +25,7 @@ namespace Job.DAL
             //id hirer
             try
             {
-                var list = Context.JobsComments.Where(c => c.HirerId == id).ToList();
+                var list = All.Where(c => c.HirerId == id).ToList();
                 System.Diagnostics.Debug.WriteLine(list);
                 return list;
             }
