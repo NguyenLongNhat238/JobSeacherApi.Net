@@ -41,7 +41,7 @@ namespace Job.DAL
             } 
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.Error.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -84,6 +84,7 @@ namespace Job.DAL
             {
                 entity.Description = jobsApply.Description;
                 entity.Cv = jobsApply.Cv;
+                entity.UpdatedDate = DateTime.Now;
                 Context.SaveChanges();
                 return jobsApply;
             }

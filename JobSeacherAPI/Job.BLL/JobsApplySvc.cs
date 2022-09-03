@@ -30,7 +30,7 @@ namespace Job.BLL
             res.Data = _rep.Delete(id);
             if (res.Data == null)
             {
-                res.SetMessage(@"Không thể xóa do một lý do nào đó!!1");
+                res.SetMessage(@"Không tìm thấy dữ liệu để xóa!!!");
             }
             else
             {

@@ -49,7 +49,7 @@ namespace Job.Web.Controllers
             {
                 return NotFound(res);
             }
-            return NoContent();
+            return Ok(res);
         }
         [HttpPost("create-apply")]
         public IActionResult CreateApply([FromBody] CreateApplyReq createApplyReq)
