@@ -23,11 +23,18 @@ namespace Job.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllCategories()
+        public IActionResult GetAllJobsComment()
         {
             var res = new SingleRsp();
             res.Data = commentSvc.All;
+            if (res.Data == null)
+            {
+                res.SetMessage("Lỗi hệ thống!!!");
+                return NotFound();
+            }
+
             return Ok(res);
+     
         }
     
 
@@ -37,6 +44,12 @@ namespace Job.Web.Controllers
             var res = new SingleRsp();
             res.Data = commentSvc.Read(idReq.Id);
             //System.Diagnostics.Debug.WriteLine(res);
+            if (res.Data == null)
+            {
+                res.SetMessage("Lỗi hệ thống!!!");
+                return NotFound();
+            }
+      
             return Ok(res);
         }
         [HttpPost("post-comment-on-user-id")]
@@ -44,13 +57,41 @@ namespace Job.Web.Controllers
         {
             var res = new SingleRsp();
             res = commentSvc.CreateComment(commentPostRequest.CreatorId, commentPostRequest.TargetId, commentPostRequest.Content);
-            return Ok(res);
+            if (res.Data == null)
+                return BadRequest();
+            return CreatedAtAction("Get Conmment ID", res.Data);
         }
-        [HttpDelete("delete-comment-id")]
-        public IActionResult DeleteCommentByID([FromBody] IdReq idReq)
+
+        [HttpDelete("delete")]
+        public IActionResult DeleteComment([FromBody] IdReq idReq)
         {
             var res = new SingleRsp();
-            res.Data = commentSvc.Delete(idReq.Id);
+            res = commentSvc.Remove(idReq.Id);
+            if (res.Data == null)
+            {
+                res.SetMessage("Không tìm thấy dữ liệu comment!!!");
+                return NotFound(res);
+            }
+            return Ok(res);
+        }
+
+        [HttpPatch("{id:int}/update-comment")]
+        public IActionResult UpdateComment(int id, [FromBody] string content)
+        {
+            var res = new SingleRsp();
+            if (commentSvc.ReadCommentId(id).Data == null)
+            {
+                res.SetMessage("Không có comment!!!");
+                res.SetError("Không tìm thấy dữ liệu comment!!!");
+                return BadRequest(res);
+            }
+            res = commentSvc.UpdateComment(id, content);
+            if (res.Data == null)
+            {
+                res.SetMessage("Lỗi hệ thống!!!");
+                res.SetError("Lỗi từ hệ thống!!");
+                return BadRequest(res);
+            }
             return Ok(res);
         }
     }

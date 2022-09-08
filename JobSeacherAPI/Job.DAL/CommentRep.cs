@@ -20,6 +20,11 @@ namespace Job.DAL
             return all;
 
         }
+        public override JobsComment Read(int id)
+        {
+            return All.FirstOrDefault(a => a.Id == id);
+        }
+
         public List<JobsComment> ReadById(int id)
         {
             //id hirer
@@ -29,10 +34,11 @@ namespace Job.DAL
                 System.Diagnostics.Debug.WriteLine(list);
                 return list;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.Error.WriteLine(ex.Message);
+                return null;
 
-                throw;
             }
     
          
@@ -41,11 +47,19 @@ namespace Job.DAL
         public  JobsComment Delete(int id)
         {
             //id comment item
-         
-            var res = Context.JobsComments.Where(c => c.Id == id).First();
-            Context.Remove(res);
-            Context.SaveChanges();
-            return res;
+            try
+            {
+                var res = Context.JobsComments.Where(c => c.Id == id).First();
+                Context.Remove(res);
+                Context.SaveChanges();
+                return res;
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.Message);
+                return null;
+            }
+       
         }
         public JobsComment Create(JobsComment c)
         {
@@ -57,11 +71,25 @@ namespace Job.DAL
                 return c;
                 //return base.Read(id);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.Error.WriteLine(ex.Message);
+                return null;
 
-                throw;
             }
         }
+        public JobsComment Update(JobsComment c)
+        {
+            var entity = Context.JobsComments.FirstOrDefault(i => i.Id == c.Id);
+            if (entity != null)
+            {
+                entity.Content = c.Content;
+                entity.UpdatedDate = DateTime.Now;
+                Context.SaveChanges();
+                return entity;
+            }
+            return null;
+        }
+
     }
 }

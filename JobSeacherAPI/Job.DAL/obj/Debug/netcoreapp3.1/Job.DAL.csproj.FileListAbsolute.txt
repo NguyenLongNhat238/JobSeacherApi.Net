@@ -13,3 +13,19 @@ C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeac
 C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.dll
 C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.pdb
 C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.genruntimeconfig.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.DAL.deps.json
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.DAL.runtimeconfig.json
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.DAL.runtimeconfig.dev.json
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.DAL.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.DAL.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.Common.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\bin\Debug\netcoreapp3.1\Job.Common.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.csproj.AssemblyReference.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.AssemblyInfoInputs.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.AssemblyInfo.cs
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.csproj.CoreCompileInputs.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.csproj.CopyComplete
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.DAL\obj\Debug\netcoreapp3.1\Job.DAL.genruntimeconfig.cache

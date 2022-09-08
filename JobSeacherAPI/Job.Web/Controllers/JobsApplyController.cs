@@ -37,6 +37,12 @@ namespace Job.Web.Controllers
         {
             var res = new SingleRsp();
             res.Data = jobsApplySvc.All;
+            if (res.Data == null)
+            {
+                res.SetMessage("Lỗi hệ thống!!!");
+                return NotFound();
+            }
+  
             return Ok(res);
         }
 
@@ -47,6 +53,7 @@ namespace Job.Web.Controllers
             res = jobsApplySvc.Remove(simpleReq.Id);
             if (res.Data == null)
             {
+                res.SetError("Không tìm thấy dữ liệu bài ứng tuyển!!!");
                 return NotFound(res);
             }
             return Ok(res);

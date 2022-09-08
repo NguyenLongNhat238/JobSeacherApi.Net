@@ -15,8 +15,14 @@ namespace Job.BLL
         public override SingleRsp Read(int id)
         {
             var res = new SingleRsp();
+            res.Data = _rep.ReadById(id);
+            return res;
+        }
+        public SingleRsp ReadCommentId(int id)
+        {
+            var res = new SingleRsp();
             res.Data = _rep.Read(id);
-            return base.Read(id);
+            return res;
         }
         public SingleRsp CreateComment(int creatorId, int targetId, string content)
         {
@@ -24,7 +30,8 @@ namespace Job.BLL
             jobsComment.CreatorId = creatorId;
             jobsComment.HirerId = targetId;
             jobsComment.Content = content;
-            jobsComment.CreatedDate = new DateTime();
+            jobsComment.CreatedDate = DateTime.Now;
+            jobsComment.UpdatedDate = DateTime.Now;
             jobsComment.Active = 1;
 
             return Create(jobsComment);
@@ -33,8 +40,37 @@ namespace Job.BLL
         {
             var res = new SingleRsp();
             res.Data = _rep.Create(c);
-            return base.Create(c);
+            return res;
         }
+
+        public SingleRsp Remove(int id)
+        {
+            var res = new SingleRsp();
+            res.Data = _rep.Delete(id);
+            if (res.Data == null)
+            {
+                res.SetMessage(@"Không tìm thấy dữ liệu để xóa!!!");
+            }
+            else
+            {
+                res.SetMessage(@"Xóa thành công!!!");
+            }
+            return res;
+        }
+        public SingleRsp UpdateComment(int id, string content)
+        {
+            var res = new SingleRsp();
+
+            JobsComment jobsComment = new JobsComment();
+            jobsComment.Content = content;
+            jobsComment.Id = id;
+            jobsComment.UpdatedDate = DateTime.Now;
+            res.Data = _rep.Update(jobsComment);
+
+
+            return res;
+        }
+
 
 
     }

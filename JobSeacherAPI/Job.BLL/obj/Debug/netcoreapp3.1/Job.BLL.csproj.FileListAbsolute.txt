@@ -15,3 +15,21 @@ C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeac
 C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.runtimeconfig.json
 C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.runtimeconfig.dev.json
 C:\Users\Nguyen Long Nhat\Documents\Study\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.genruntimeconfig.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.deps.json
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.runtimeconfig.json
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.runtimeconfig.dev.json
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.BLL.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.Common.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.DAL.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.Common.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\bin\Debug\netcoreapp3.1\Job.DAL.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.csproj.AssemblyReference.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.AssemblyInfoInputs.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.AssemblyInfo.cs
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.csproj.CoreCompileInputs.cache
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.csproj.CopyComplete
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.dll
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.pdb
+D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.BLL\obj\Debug\netcoreapp3.1\Job.BLL.genruntimeconfig.cache
