@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Edu\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {}
+    "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {}
   },
   "projects": {
-    "D:\\Edu\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {
+    "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Edu\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
         "projectName": "Job.Common",
-        "projectPath": "D:\\Edu\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
-        "packagesPath": "C:\\Users\\Pin\\.nuget\\packages\\",
-        "outputPath": "D:\\Edu\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\obj\\",
+        "projectPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
+        "packagesPath": "C:\\Users\\Nguyen Long Nhat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Pin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Nguyen Long Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
