@@ -1,6 +1,6 @@
 # JobSeacherApi.Net
 # Getting Started with Create Job Searcher App
-  Step1: Restore Database in *SQL Server* with file **Jobdb.sql** \
+  Step1: Restore Database in *SQL Server* with file **Jobdb.sql** and data **jobdbDATA.sql** \
   Step2: change name Data-Source with your PC name in FIle Model/jobdbContext.cs\
   Step3: Open Project and Run \
   \
