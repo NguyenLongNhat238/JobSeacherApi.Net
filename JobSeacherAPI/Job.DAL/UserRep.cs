@@ -37,6 +37,7 @@ namespace Job.DAL
 
 
 
+
         }
         public JobsUser Delete(int id)
         {

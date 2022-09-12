@@ -23,3 +23,16 @@ D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcore
 D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.dll
 D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.pdb
 D:\Edu\LapTrinhCSDL\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.genruntimeconfig.cache
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.deps.json
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.runtimeconfig.json
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.runtimeconfig.dev.json
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.dll
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\bin\Debug\netcoreapp3.1\Job.Common.pdb
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.csproj.AssemblyReference.cache
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.AssemblyInfoInputs.cache
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.AssemblyInfo.cs
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.csproj.CoreCompileInputs.cache
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.dll
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.pdb
+C:\Users\window\Desktop\JobSeacherApi.Net\JobSeacherAPI\Job.Common\obj\Debug\netcoreapp3.1\Job.Common.genruntimeconfig.cache

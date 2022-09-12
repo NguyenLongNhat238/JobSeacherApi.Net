@@ -21,14 +21,8 @@ namespace Job.Web.Controllers
         {
             jobsUserSvc = new JobsUserSvc();
         }
-
-        public static List<JobsUser> Users = new List<JobsUser>();
         [HttpGet]
-        //public List<JobsUser> GeAlltUsers()
-        //{
-        //    var db = new jobdbContext();
-        //    return db.JobsUsers.ToList();
-        //}
+       
         public IActionResult GetAllUser()
         {
             var res = new SingleRsp();
@@ -36,105 +30,82 @@ namespace Job.Web.Controllers
             return Ok(res);
         }
         [HttpGet("get-by-{id}")]
-        public IActionResult GetIdUser(long id)
+        public IActionResult GetByUSerId(int Id)
         {
-            try
+            var res = new SingleRsp();
+            res.Data = jobsUserSvc.Read(Id);
+            if (res.Data == null)
             {
-                var user = Users.SingleOrDefault(idd => idd.Id == id);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    return Ok(user);
-                }
+                res.SetMessage("Lỗi hệ thống!!!");
+                return NotFound();
             }
-            catch
-            {
-                return BadRequest();
-            }
+
+            return Ok(res);
         }
         [HttpGet("get-by-{Username}")]
         public IActionResult GetUserNameUser(string Username)
         {
-            try
+            var res = new SingleRsp();
+            res.Data = jobsUserSvc.Read(Username);
+            if (res.Data == null)
             {
-                var user = Users.SingleOrDefault(name => name.Username == Username);
-                if (user == null)
-                {
-                    return NotFound();
-                }
+                res.SetMessage("Lỗi hệ thống!!!");
+                return NotFound();
+            }
 
-                else
-                {
-                    return Ok(user);
-                }
-            }
-            catch
-            {
-                return BadRequest();
-            }
+            return Ok(res);
         }
 
         [HttpPost]
-        public IActionResult Create(JobsUser jobsUser)
+        public IActionResult CreateUser([FromBody] UserRequest userRequest)
         {
-            var user = new JobsUser
-            {
-                Id = jobsUser.Id,
-                Username = jobsUser.Username,
-                FirstName = jobsUser.FirstName,
-                LastName = jobsUser.LastName
+            //var user = new JobsUser
+            //{
+            //    Id = jobsUser.Id,
+            //    Username = jobsUser.Username,
+            //    FirstName = jobsUser.FirstName,
+            //    LastName = jobsUser.LastName
 
-            };
-            Users.Add(user);
+            //};
+            //jobsUserSvc.Add(user);
 
-            return Ok("them thanh cong");
+            //return Ok("them thanh cong");
+            var res = new SingleRsp();
+            res = jobsUserSvc.CreateUser(userRequest);
+            if (res.Data == null)
+                return BadRequest();
+            return CreatedAtAction("Get ID", res.Data);
         }
         [HttpPut("{id}")]
-        public IActionResult Edit(long id, JobsUser editUser)
+        public IActionResult Edit(int id, string FirstName, string Username, string LastName, string Email, string Password)
         {
-            try
+            var res = new SingleRsp();
+            if (jobsUserSvc.Read(id).Data == null)
             {
-                var user = Users.SingleOrDefault(idd => idd.Id == id);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-                else//tiến hành update
-                {
-                    user.Username = editUser.Username;
-                    user.FirstName = editUser.FirstName;
-                    user.LastName = editUser.LastName;
-                    user.Email = editUser.Email;
-                    user.Password = editUser.Password;
-                    return Ok();
-
-                }
+                res.SetMessage("Không có user!!!");
+                res.SetError("Không tìm thấy dữ liệu user!!!");
+                return BadRequest(res);
             }
-            catch
+            res = jobsUserSvc.UpdateUser(id, FirstName,Username,LastName,Email,Password );
+            if (res.Data == null)
             {
-                return BadRequest();
+                res.SetMessage("Lỗi hệ thống!!!");
+                res.SetError("Lỗi từ hệ thống!!");
+                return BadRequest(res);
             }
+            return Ok(res);
         }
         [HttpDelete("{id}")]
-        public IActionResult RemoveId(long id)
+        public IActionResult DeleteUser([FromBody] IdReq idReq)
         {
-            try
+            var res = new SingleRsp();
+            res = jobsUserSvc.RemoveUser(idReq.Id);
+            if (res.Data == null)
             {
-                var user = Users.SingleOrDefault(idd => idd.Id == id);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-                Users.Remove(user);
-                return Ok();
+                res.SetMessage("Không tìm thấy dữ liệu User!!!");
+                return NotFound(res);
             }
-            catch
-            {
-                return BadRequest();
-            }
+            return Ok(res);
         }
 
 

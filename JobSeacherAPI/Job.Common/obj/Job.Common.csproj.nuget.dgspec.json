@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {}
+    "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {
+    "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
+        "projectUniqueName": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
         "projectName": "Job.Common",
-        "projectPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
-        "packagesPath": "C:\\Users\\Nguyen Long Nhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\obj\\",
+        "projectPath": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj",
+        "packagesPath": "C:\\Users\\window\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nguyen Long Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\window\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     }

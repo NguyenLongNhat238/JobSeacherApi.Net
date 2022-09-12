@@ -1,4 +1,5 @@
-﻿using Job.Common.Rsp;
+﻿using Job.Common.Req;
+using Job.Common.Rsp;
 using Job.DAL;
 using Job.DAL.Models;
 using System;
@@ -20,22 +21,36 @@ namespace Job.BLL
             res.Data = _rep.Read(id);
             return base.Read(id);
         }
-        public SingleRsp CreateUser(int id, string FirstName, string Username, string LastName, string Email)
-        {
-            JobsUser jobsUser = new JobsUser();
-            jobsUser.Id = id;
-            jobsUser.Username = Username;
-            jobsUser.FirstName = FirstName;
-            jobsUser.LastName = LastName;
-            jobsUser.Email = Email;
-            return Create(jobsUser);
-        }
         public override SingleRsp Create(JobsUser c)
         {
             var res = new SingleRsp();
             res.Data = _rep.Create(c);
             return base.Create(c);
         }
+        public SingleRsp CreateUser(UserRequest userRequest)
+        {
+            //JobsUser jobsUser = new JobsUser();
+            //jobsUser.Id = id;
+            //jobsUser.Username = Username;
+            //jobsUser.FirstName = FirstName;
+            //jobsUser.LastName = LastName;
+            //jobsUser.Email = Email;
+            //jobsUser.Password = Password;
+            //return Create(jobsUser);
+            var res = new SingleRsp();
+            JobsUser jobsUser = new JobsUser();
+            jobsUser.Username = userRequest.Username;
+            jobsUser.FirstName = userRequest.FirstName;
+            jobsUser.LastName = userRequest.LastName;
+            jobsUser.Email = userRequest.Email;
+            jobsUser.Password = userRequest.Password;
+            jobsUser.IsStaff =0;
+            jobsUser.IsActive = 1;
+            jobsUser.UserRole = 2;
+            res.Data = _rep.Create(jobsUser);
+            return res;
+        }
+        
         public SingleRsp RemoveUser(int id)
         {
             var res = new SingleRsp();
@@ -50,7 +65,7 @@ namespace Job.BLL
             }
             return res;
         }
-        public SingleRsp UpdateUser(int id, string FirstName, string Username, string LastName, string Email)
+        public SingleRsp UpdateUser(int id, string FirstName, string Username, string LastName, string Email,string Password)
         {
             var res = new SingleRsp();
 
@@ -60,6 +75,7 @@ namespace Job.BLL
             jobsUser.FirstName = FirstName;
             jobsUser.LastName = LastName;
             jobsUser.Email = Email;
+            jobsUser.Password = Password;
             return res;
         }
     }
