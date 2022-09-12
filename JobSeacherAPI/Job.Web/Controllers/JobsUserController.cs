@@ -95,7 +95,7 @@ namespace Job.Web.Controllers
             }
             return Ok(res);
         }
-        [HttpDelete("{id}")]
+        [HttpDelete("delete")]
         public IActionResult DeleteUser([FromBody] IdReq idReq)
         {
             var res = new SingleRsp();

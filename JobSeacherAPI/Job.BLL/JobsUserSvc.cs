@@ -44,6 +44,8 @@ namespace Job.BLL
             jobsUser.LastName = userRequest.LastName;
             jobsUser.Email = userRequest.Email;
             jobsUser.Password = userRequest.Password;
+            jobsUser.DateJoined = DateTime.Now;
+            jobsUser.IsSuperuser = 0;
             jobsUser.IsStaff =0;
             jobsUser.IsActive = 1;
             jobsUser.UserRole = 2;

@@ -5818,19 +5818,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\window\\.nuget\\packages\\": {}
+    "C:\\Users\\Nguyen Long Nhat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.DAL\\Job.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.DAL\\Job.DAL.csproj",
       "projectName": "Job.DAL",
-      "projectPath": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.DAL\\Job.DAL.csproj",
-      "packagesPath": "C:\\Users\\window\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.DAL\\obj\\",
+      "projectPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.DAL\\Job.DAL.csproj",
+      "packagesPath": "C:\\Users\\Nguyen Long Nhat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\window\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nguyen Long Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5844,8 +5844,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {
-              "projectPath": "C:\\Users\\window\\Desktop\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj"
+            "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj": {
+              "projectPath": "C:\\Users\\Nguyen Long Nhat\\Documents\\Study\\LapTrinhCSDL\\JobSeacherApi.Net\\JobSeacherAPI\\Job.Common\\Job.Common.csproj"
             }
           }
         }
@@ -5890,7 +5890,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
