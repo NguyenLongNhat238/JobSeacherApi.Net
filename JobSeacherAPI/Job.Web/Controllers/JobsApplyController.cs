@@ -53,7 +53,7 @@ namespace Job.Web.Controllers
             res = jobsApplySvc.Remove(simpleReq.Id);
             if (res.Data == null)
             {
-                res.SetError("Không tìm thấy dữ liệu bài ứng tuyển!!!");
+                res.Data = "Không tìm thấy dữ liệu bài ứng tuyển!!!";
                 return NotFound(res);
             }
             return Ok(res);

@@ -27,15 +27,7 @@ namespace Job.BLL
         public SingleRsp Remove(int id)
         {
             var res = new SingleRsp();
-            res.Data = _rep.Delete(id);
-            if (res.Data == null)
-            {
-                res.SetMessage(@"Không tìm thấy dữ liệu để xóa!!!");
-            }
-            else
-            {
-                res.SetMessage(@"Xóa thành công!!!");
-            }
+            res = _rep.Delete(id);
             return res;
         }
             
@@ -53,12 +45,13 @@ namespace Job.BLL
 
         public SingleRsp UpdateApply(int id, CreateApplyReq createApplyReq)
         {
+
             var res = new SingleRsp();
             JobsApply jobsApply = new JobsApply();
             jobsApply.Id = id;
             jobsApply.Description = createApplyReq.Description;
             jobsApply.Cv = createApplyReq.Cv;
-            res.Data = _rep.Update(jobsApply);
+            res = _rep.Update(jobsApply);
             return res;
         }
 

@@ -1,4 +1,5 @@
 ﻿using Job.Common.DAL;
+using Job.Common.Rsp;
 using Job.DAL.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -29,21 +30,31 @@ namespace Job.DAL
             return (int)m.Id;
         }
 
-        public JobsApply Delete(int id)
+        public SingleRsp Delete(int id)
         {
             //id comment item
-            try
+            var res = new SingleRsp();
+            using (var context = new jobdbContext())
             {
-                var res = Context.JobsApplies.Where(c => c.Id == id).First();
-                Context.Remove(res);
-                Context.SaveChanges();
-                return res;
-            } 
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine(ex.Message);
-                return null;
+                using (var tran = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var p = context.JobsApplies.Where(c => c.Id == id).First();
+                        context.Remove(res);
+                        context.SaveChanges();
+                        tran.Commit();
+                        res.Data = p;
+
+                    }
+                    catch (Exception ex)
+                    {
+                        tran.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
             }
+            return res;
         }
         public JobsApply Create(JobsApply jobsApply)
         {
@@ -77,18 +88,34 @@ namespace Job.DAL
             }
         }
 
-        public JobsApply Update(JobsApply jobsApply)
+        public SingleRsp Update(JobsApply jobsApply)
         {
-            var entity = Context.JobsApplies.FirstOrDefault(i => i.Id == jobsApply.Id);
-            if (entity != null)
+            var res = new SingleRsp();
+            using (var context = new jobdbContext())
             {
-                entity.Description = jobsApply.Description;
-                entity.Cv = jobsApply.Cv;
-                entity.UpdatedDate = DateTime.Now;
-                Context.SaveChanges();
-                return jobsApply;
+                using (var tran = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var entity = context.JobsApplies.FirstOrDefault(i => i.Id == jobsApply.Id);
+                        if (entity != null)
+                        {
+                            entity.Description = jobsApply.Description;
+                            entity.Cv = jobsApply.Cv;
+                            entity.UpdatedDate = DateTime.Now;
+                            context.SaveChanges();
+                            tran.Commit();
+                            res.Data = jobsApply;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        tran.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
             }
-            return null;
+            return res;
         }
     }
 }
