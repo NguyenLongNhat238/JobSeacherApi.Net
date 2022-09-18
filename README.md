@@ -1,4 +1,6 @@
 # JobSeacherApi.Net
+Thiết kế CRUD API cho ứng dụng tìm kiếm việc làm\
+Ngôn ngữ lập trình **ASP.NET Core Web API** databasefirst, 
 # Getting Started with Create Job Searcher App
   Step1: Restore Database in *SQL Server* with file **Jobdb.sql** and data **jobdbDATA.sql** \
   Step2: change name Data-Source with your PC name in FIle Model/jobdbContext.cs\
